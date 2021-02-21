@@ -80,13 +80,13 @@
                                 <rect key="frame" x="75.333333333333343" y="652.66666666666663" width="263.66666666666663" height="33"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アカウントをお持ちでない場合" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cyh-UN-jYE">
-                                        <rect key="frame" x="1" y="0.0" width="171" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="171.66666666666666" height="33"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3U-Xn-2oS">
-                                        <rect key="frame" x="198" y="0.0" width="70" height="34"/>
+                                        <rect key="frame" x="193.66666666666669" y="0.0" width="70" height="33"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="新規登録">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -130,9 +130,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="〜くろのん〜" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nC-X6-GP2">
-                                <rect key="frame" x="78" y="333" width="256" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="〜くろのん〜" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nC-X6-GP2">
+                                <rect key="frame" x="85" y="344" width="242" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -142,6 +141,8 @@
                         <color key="backgroundColor" red="0.21176470589999999" green="0.35294117650000001" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="zPe-MB-guU" firstAttribute="centerX" secondItem="gsp-lK-jLi" secondAttribute="centerX" id="4gi-ZS-Eog"/>
+                            <constraint firstItem="3nC-X6-GP2" firstAttribute="centerY" secondItem="gsp-lK-jLi" secondAttribute="centerY" id="lxp-Ip-UVG"/>
+                            <constraint firstItem="3nC-X6-GP2" firstAttribute="centerX" secondItem="gsp-lK-jLi" secondAttribute="centerX" constant="-1" id="m0L-hH-JTw"/>
                             <constraint firstItem="zPe-MB-guU" firstAttribute="centerY" secondItem="gsp-lK-jLi" secondAttribute="centerY" multiplier="10:5.5" id="q44-No-zbl"/>
                         </constraints>
                     </view>
