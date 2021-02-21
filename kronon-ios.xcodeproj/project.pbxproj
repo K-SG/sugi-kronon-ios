@@ -13,6 +13,8 @@
 		2F83B56E25DAC05F003142D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F83B56C25DAC05F003142D4 /* Main.storyboard */; };
 		2F83B57025DAC062003142D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F83B56F25DAC062003142D4 /* Assets.xcassets */; };
 		2F83B57325DAC062003142D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F83B57125DAC062003142D4 /* LaunchScreen.storyboard */; };
+		2F83B59025DCACAE003142D4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F83B58E25DCACAE003142D4 /* LoginViewController.swift */; };
+		2F83B59A25DCE810003142D4 /* kronon.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F83B59925DCE810003142D4 /* kronon.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		2F83B56F25DAC062003142D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F83B57225DAC062003142D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F83B57425DAC062003142D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F83B58E25DCACAE003142D4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2F83B59925DCE810003142D4 /* kronon.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = kronon.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		2F83B56525DAC05F003142D4 /* kronon-ios */ = {
 			isa = PBXGroup;
 			children = (
+				2F83B59625DCDC75003142D4 /* Top */,
+				2F83B59525DCDC37003142D4 /* Login */,
+				2F83B59425DCDBFD003142D4 /* Models */,
 				2F83B56625DAC05F003142D4 /* AppDelegate.swift */,
 				2F83B56825DAC05F003142D4 /* SceneDelegate.swift */,
-				2F83B56A25DAC05F003142D4 /* ViewController.swift */,
 				2F83B56C25DAC05F003142D4 /* Main.storyboard */,
 				2F83B56F25DAC062003142D4 /* Assets.xcassets */,
 				2F83B57125DAC062003142D4 /* LaunchScreen.storyboard */,
 				2F83B57425DAC062003142D4 /* Info.plist */,
+				2F83B59925DCE810003142D4 /* kronon.strings */,
 			);
 			path = "kronon-ios";
+			sourceTree = "<group>";
+		};
+		2F83B59425DCDBFD003142D4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2F83B59525DCDC37003142D4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2F83B58E25DCACAE003142D4 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2F83B59625DCDC75003142D4 /* Top */ = {
+			isa = PBXGroup;
+			children = (
+				2F83B56A25DAC05F003142D4 /* ViewController.swift */,
+			);
+			path = Top;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F83B59A25DCE810003142D4 /* kronon.strings in Resources */,
 				2F83B57325DAC062003142D4 /* LaunchScreen.storyboard in Resources */,
 				2F83B57025DAC062003142D4 /* Assets.xcassets in Resources */,
 				2F83B56E25DAC05F003142D4 /* Main.storyboard in Resources */,
@@ -137,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F83B59025DCACAE003142D4 /* LoginViewController.swift in Sources */,
 				2F83B56B25DAC05F003142D4 /* ViewController.swift in Sources */,
 				2F83B56725DAC05F003142D4 /* AppDelegate.swift in Sources */,
 				2F83B56925DAC05F003142D4 /* SceneDelegate.swift in Sources */,
