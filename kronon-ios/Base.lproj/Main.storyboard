@@ -20,38 +20,20 @@
                                 <rect key="frame" x="0.0" y="235" width="413" height="266"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
-<<<<<<< HEAD
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="予定管理システム" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gr0-7O-ESq">
-                                <rect key="frame" x="232" y="32" width="203" height="30"/>
-=======
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="予定管理システム" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gr0-7O-ESq">
-                                <rect key="frame" x="104" y="82" width="203" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
->>>>>>> origin/feature/login_layout
+                                <rect key="frame" x="41" y="151" width="203" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-<<<<<<< HEAD
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="〜くろのん〜" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIC-N1-K6f">
-                                <rect key="frame" x="213" y="70" width="242" height="48"/>
-=======
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="〜くろのん〜" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIC-N1-K6f">
-                                <rect key="frame" x="85" y="158" width="242" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
->>>>>>> origin/feature/login_layout
+                                <rect key="frame" x="30" y="297" width="242" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-<<<<<<< HEAD
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cD4-Sv-a9c">
-                                <rect key="frame" x="251" y="258" width="165" height="46"/>
-=======
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cD4-Sv-a9c">
-                                <rect key="frame" x="125" y="546" width="165" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
->>>>>>> origin/feature/login_layout
+                                <rect key="frame" x="54" y="1024" width="165" height="46"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="スタート" backgroundImage="start_button">
                                     <color key="titleColor" red="0.36078431372549019" green="0.3529411764705882" blue="0.3529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -65,12 +47,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.87058823529411766" green="0.60784313725490191" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="YIC-N1-K6f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2km-xI-cff"/>
-                            <constraint firstItem="Gr0-7O-ESq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7cz-Ky-hJO"/>
-                            <constraint firstItem="cD4-Sv-a9c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="3:2" id="7za-Ea-qQI"/>
-                            <constraint firstItem="YIC-N1-K6f" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1:2" id="NHJ-xQ-YDs"/>
+                            <constraint firstItem="YIC-N1-K6f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-1" id="2km-xI-cff"/>
+                            <constraint firstItem="Gr0-7O-ESq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-1.5" id="7cz-Ky-hJO"/>
+                            <constraint firstItem="cD4-Sv-a9c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="3:2" constant="17" id="7za-Ea-qQI"/>
+                            <constraint firstItem="YIC-N1-K6f" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1:2" constant="-2" id="NHJ-xQ-YDs"/>
                             <constraint firstItem="cD4-Sv-a9c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fEP-0B-RPe"/>
-                            <constraint firstItem="Gr0-7O-ESq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1:4" id="nGX-ml-j0t"/>
+                            <constraint firstItem="Gr0-7O-ESq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1:4" constant="5" id="nGX-ml-j0t"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="AIj-4g-393"/>
@@ -84,10 +66,6 @@
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="JFL-fh-7xP" customClass="LoginViewController" customModule="kronon_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gsp-lK-jLi">
-<<<<<<< HEAD
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-=======
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -171,7 +149,6 @@
                                 </connections>
                             </button>
                         </subviews>
->>>>>>> origin/feature/login_layout
                         <viewLayoutGuide key="safeArea" id="AQc-b5-JvU"/>
                         <color key="backgroundColor" red="0.21176470589999999" green="0.35294117650000001" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
