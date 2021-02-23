@@ -160,8 +160,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="ozS-dt-jcv"/>
                     <connections>
-                        <outlet property="mail_text" destination="jdM-E8-b7I" id="biO-Cs-535"/>
-                        <outlet property="password_text" destination="GwT-aB-Y0z" id="hVU-S6-PAK"/>
+                        <outlet property="emailText" destination="jdM-E8-b7I" id="biO-Cs-535"/>
+                        <outlet property="passwordText" destination="GwT-aB-Y0z" id="hVU-S6-PAK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wsv-0y-cKK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

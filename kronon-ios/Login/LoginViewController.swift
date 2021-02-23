@@ -11,19 +11,18 @@ class LoginViewController: UIViewController {
 
 //    @IBOutlet weak var textField:UITextField!
     
-    @IBOutlet weak var mail_text: UITextField!
-    @IBOutlet weak var password_text: UITextField!
+    @IBOutlet weak var emailText: UITextField!
+    @IBOutlet weak var passwordText: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         let mailLeftPadding = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 0))
         let passwordLeftPadding = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 0))
-//        mailLeftPadding.backgroundColor = UIColor.clear
-        mail_text.leftView = mailLeftPadding
-        mail_text.leftViewMode = .always
-        password_text.leftView = passwordLeftPadding
-        password_text.leftViewMode = .always
+        emailText.leftView = mailLeftPadding
+        emailText.leftViewMode = .always
+        passwordText.leftView = passwordLeftPadding
+        passwordText.leftViewMode = .always
     }
     
 
