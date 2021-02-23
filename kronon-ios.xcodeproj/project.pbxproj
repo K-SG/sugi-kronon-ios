@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F71DCC725E4CC2600081E41 /* NewAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F71DCC625E4CC2600081E41 /* NewAccountViewController.swift */; };
+		2F71DCCB25E4D21C00081E41 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F71DCCA25E4D21C00081E41 /* CalendarViewController.swift */; };
 		2F83B56725DAC05F003142D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F83B56625DAC05F003142D4 /* AppDelegate.swift */; };
 		2F83B56925DAC05F003142D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F83B56825DAC05F003142D4 /* SceneDelegate.swift */; };
 		2F83B56B25DAC05F003142D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F83B56A25DAC05F003142D4 /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F71DCC625E4CC2600081E41 /* NewAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountViewController.swift; sourceTree = "<group>"; };
+		2F71DCCA25E4D21C00081E41 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		2F83B56325DAC05F003142D4 /* kronon-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kronon-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F83B56625DAC05F003142D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F83B56825DAC05F003142D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +45,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F71DCC425E4CBEE00081E41 /* NewAccount */ = {
+			isa = PBXGroup;
+			children = (
+				2F71DCC625E4CC2600081E41 /* NewAccountViewController.swift */,
+			);
+			path = NewAccount;
+			sourceTree = "<group>";
+		};
+		2F71DCC925E4D1DA00081E41 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				2F71DCCA25E4D21C00081E41 /* CalendarViewController.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
 		2F83B55A25DAC05F003142D4 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +80,8 @@
 		2F83B56525DAC05F003142D4 /* kronon-ios */ = {
 			isa = PBXGroup;
 			children = (
+				2F71DCC925E4D1DA00081E41 /* Calendar */,
+				2F71DCC425E4CBEE00081E41 /* NewAccount */,
 				2F83B59625DCDC75003142D4 /* Top */,
 				2F83B59525DCDC37003142D4 /* Login */,
 				2F83B59425DCDBFD003142D4 /* Models */,
@@ -168,9 +190,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F71DCCB25E4D21C00081E41 /* CalendarViewController.swift in Sources */,
 				2F83B59025DCACAE003142D4 /* LoginViewController.swift in Sources */,
 				2F83B56B25DAC05F003142D4 /* ViewController.swift in Sources */,
 				2F83B56725DAC05F003142D4 /* AppDelegate.swift in Sources */,
+				2F71DCC725E4CC2600081E41 /* NewAccountViewController.swift in Sources */,
 				2F83B56925DAC05F003142D4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
