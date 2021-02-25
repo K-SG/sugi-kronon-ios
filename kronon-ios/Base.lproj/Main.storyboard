@@ -192,8 +192,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="メールアドレス" textAlignment="natural" minimumFontSize="17" background="new_account_text" translatesAutoresizingMaskIntoConstraints="NO" id="nVb-S8-qpS">
-                                <rect key="frame" x="67" y="341" width="280" height="54"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="メールアドレス" textAlignment="natural" minimumFontSize="17" background="new_account_text" translatesAutoresizingMaskIntoConstraints="NO" id="nVb-S8-qpS">
+                                <rect key="frame" x="67" y="340" width="280" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -203,8 +203,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="パスワード" textAlignment="natural" minimumFontSize="17" background="new_account_text" translatesAutoresizingMaskIntoConstraints="NO" id="Msq-mp-GUr">
-                                <rect key="frame" x="67" y="421" width="280" height="54"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="パスワード" textAlignment="natural" minimumFontSize="17" background="new_account_text" translatesAutoresizingMaskIntoConstraints="NO" id="Msq-mp-GUr">
+                                <rect key="frame" x="67" y="420" width="280" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -215,7 +215,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="JFz-iZ-spa">
-                                <rect key="frame" x="81.333333333333329" y="652.66666666666663" width="251.33333333333337" height="33"/>
+                                <rect key="frame" x="81.333333333333314" y="652.66666666666663" width="251.33333333333337" height="33"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ログインアカウントがある？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sGV-4a-uOD">
                                         <rect key="frame" x="0.0" y="0.0" width="159.33333333333334" height="33"/>
@@ -233,7 +233,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Y9-id-AzO">
-                                <rect key="frame" x="77" y="148" width="260" height="72"/>
+                                <rect key="frame" x="77" y="148.33333333333334" width="260.33333333333331" height="71.666666666666657"/>
                                 <string key="text">表示名は日本語で15文字以内
 パスワードは半角英数字で8～20文字
 大文字・小文字・数字を必ず使用して
@@ -243,7 +243,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7G-fl-6Qx">
-                                <rect key="frame" x="67" y="569" width="280" height="54"/>
+                                <rect key="frame" x="67" y="580" width="280" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="新規登録" backgroundImage="new_account_button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -254,8 +254,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="パスワード確認" textAlignment="natural" minimumFontSize="17" background="new_account_text" translatesAutoresizingMaskIntoConstraints="NO" id="rPq-kq-mYg">
-                                <rect key="frame" x="67" y="492" width="280" height="54"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="パスワード確認" textAlignment="natural" minimumFontSize="17" background="new_account_text" translatesAutoresizingMaskIntoConstraints="NO" id="rPq-kq-mYg">
+                                <rect key="frame" x="67" y="500" width="280" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -265,10 +265,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="表示名" textAlignment="natural" minimumFontSize="17" background="login_text" translatesAutoresizingMaskIntoConstraints="NO" id="zvp-NT-Me9">
-                                <rect key="frame" x="67" y="274" width="280" height="44"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="表示名" textAlignment="natural" minimumFontSize="17" background="login_text" translatesAutoresizingMaskIntoConstraints="NO" id="zvp-NT-Me9">
+                                <rect key="frame" x="67" y="260" width="280" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -276,10 +276,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CCE-Oc-ChS">
-                                <rect key="frame" x="67" y="274" width="280" height="349"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZVT-5o-d5j"/>
                         <color key="backgroundColor" red="0.99215686274509807" green="0.96862745098039216" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
@@ -291,6 +287,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="アカウント作成" id="xLv-x5-uX8"/>
+                    <connections>
+                        <outlet property="emailEditText" destination="nVb-S8-qpS" id="izA-Ac-CWO"/>
+                        <outlet property="nameEditText" destination="zvp-NT-Me9" id="nnN-Tm-G2j"/>
+                        <outlet property="passwordConfirmEditText" destination="rPq-kq-mYg" id="sDy-HZ-Xsl"/>
+                        <outlet property="passwordEditText" destination="Msq-mp-GUr" id="gGV-9e-2JP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Xx-jR-LkD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
