@@ -168,7 +168,7 @@
             </objects>
             <point key="canvasLocation" x="1828.985507246377" y="83.152173913043484"/>
         </scene>
-        <!--Item 2-->
+        <!--予定表-->
         <scene sceneID="Ozk-yu-2dP">
             <objects>
                 <viewController id="UxS-31-WhT" sceneMemberID="viewController">
@@ -187,13 +187,29 @@
                         <viewLayoutGuide key="safeArea" id="5qQ-Hz-FJF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="m1o-Wi-w0N"/>
+                    <navigationItem key="navigationItem" title="予定表" id="scE-Q7-orI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hpP-mA-kad" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3614" y="1113"/>
+            <point key="canvasLocation" x="4535" y="510"/>
         </scene>
-        <!--Item 1-->
+        <!--アカウント-->
+        <scene sceneID="Q5w-g3-vca">
+            <objects>
+                <viewController id="maW-ep-c80" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QXN-Eq-SzA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="2CN-eg-1GY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="アカウント" id="bVI-P0-tIV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e0w-1d-CLk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4535" y="1268"/>
+        </scene>
+        <!--カレンダー-->
         <scene sceneID="tFu-1O-gZq">
             <objects>
                 <viewController id="chg-gv-So1" customClass="CalendarViewController" customModule="kronon_ios" customModuleProvider="target" sceneMemberID="viewController">
@@ -212,16 +228,16 @@
                         <viewLayoutGuide key="safeArea" id="aNb-4j-Shu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="olw-Pz-iD7"/>
+                    <navigationItem key="navigationItem" title="カレンダー" id="8Y1-h2-sZI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TbU-oa-JK0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3613" y="234"/>
+            <point key="canvasLocation" x="4536.231884057971" y="-281.25"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Kronon Tab Bar Controller-->
         <scene sceneID="Hqf-fs-Ge3">
             <objects>
-                <tabBarController id="i9f-U2-t8h" sceneMemberID="viewController">
+                <tabBarController id="i9f-U2-t8h" customClass="KrononTabBarController" customModule="kronon_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="5Vr-co-pG1"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nAA-bb-4s7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -229,8 +245,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="chg-gv-So1" kind="relationship" relationship="viewControllers" id="uQ6-Lk-EWQ"/>
-                        <segue destination="UxS-31-WhT" kind="relationship" relationship="viewControllers" id="zQY-ed-3Al"/>
+                        <segue destination="3Tb-gt-Lac" kind="relationship" relationship="viewControllers" id="uQ6-Lk-EWQ"/>
+                        <segue destination="9jU-gk-M24" kind="relationship" relationship="viewControllers" id="zQY-ed-3Al"/>
+                        <segue destination="58v-U8-5sH" kind="relationship" relationship="viewControllers" id="csx-8F-eAU"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qtX-A7-t6D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -363,6 +380,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="z23-xs-XTV">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="EQB-mK-dve"/>
                     </connections>
@@ -370,6 +390,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dLV-Dw-vNG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="88.043478260869577"/>
+        </scene>
+        <!--カレンダー-->
+        <scene sceneID="BIi-mm-HHE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBarsOnTap="YES" id="3Tb-gt-Lac" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="カレンダー" image="tabbar_calendar_icon" id="olw-Pz-iD7"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KF8-VG-QPS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="chg-gv-So1" kind="relationship" relationship="rootViewController" id="0Lk-43-Wsz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uVY-DF-1Td" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3628.985507246377" y="-281.25"/>
+        </scene>
+        <!--予定表-->
+        <scene sceneID="ubE-qG-IuF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9jU-gk-M24" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="予定表" image="tabbar_clock_icon" id="m1o-Wi-w0N"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hel-gK-ugc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UxS-31-WhT" kind="relationship" relationship="rootViewController" id="v5y-67-z4k"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="znR-1t-mLB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3629" y="510"/>
+        </scene>
+        <!--アカウント-->
+        <scene sceneID="YUQ-7Z-gJ3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="58v-U8-5sH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="アカウント" image="tabbar_account_icon" id="1BE-fj-ydb"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ymc-DE-xHh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="maW-ep-c80" kind="relationship" relationship="rootViewController" id="MIU-6y-TVz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Za-4h-0Ei" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3629" y="1268"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
@@ -381,6 +458,9 @@
         <image name="new_account_button" width="327" height="48"/>
         <image name="new_account_text" width="327" height="48"/>
         <image name="start_button" width="165" height="46"/>
+        <image name="tabbar_account_icon" width="18.333333969116211" height="18.333333969116211"/>
+        <image name="tabbar_calendar_icon" width="18" height="20.666666030883789"/>
+        <image name="tabbar_clock_icon" width="20" height="20"/>
         <image name="top_kronon&amp;star" width="324" height="262.66665649414062"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

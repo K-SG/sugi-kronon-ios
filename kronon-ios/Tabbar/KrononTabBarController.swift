@@ -1,20 +1,25 @@
 //
-//  CalendarViewController.swift
+//  KrononTabBarController.swift
 //  kronon-ios
 //
-//  Created by 杉浩輝 on 2021/02/23.
+//  Created by 杉浩輝 on 2021/02/27.
 //
 
 import UIKit
 
-class CalendarViewController: UIViewController {
+class KrononTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        // アイコンの色を変更できます！
+        UITabBar.appearance().tintColor = SoreppoiAppColor.tabIcon
+        // 背景色を変更できます！
+        UITabBar.appearance().barTintColor = SoreppoiAppColor.tabBackground
 
         // Do any additional setup after loading the view.
     }
     
+
     /*
     // MARK: - Navigation
 

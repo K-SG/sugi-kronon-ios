@@ -1,13 +1,13 @@
 //
-//  CalendarViewController.swift
+//  AccountViewController.swift
 //  kronon-ios
 //
-//  Created by 杉浩輝 on 2021/02/23.
+//  Created by 杉浩輝 on 2021/02/27.
 //
 
 import UIKit
 
-class CalendarViewController: UIViewController {
+class AccountViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,6 +15,7 @@ class CalendarViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+
     /*
     // MARK: - Navigation
 

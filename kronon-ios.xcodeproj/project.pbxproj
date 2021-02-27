@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F4431D425EA7A5000AC0A70 /* Kronon+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4431D325EA7A5000AC0A70 /* Kronon+Color.swift */; };
+		2F4431D825EA7B8200AC0A70 /* KrononTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4431D725EA7B8200AC0A70 /* KrononTabBarController.swift */; };
 		2F71DCC725E4CC2600081E41 /* NewAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F71DCC625E4CC2600081E41 /* NewAccountViewController.swift */; };
 		2F71DCCB25E4D21C00081E41 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F71DCCA25E4D21C00081E41 /* CalendarViewController.swift */; };
 		2F71DCE125E8DBC500081E41 /* UIView+IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F71DCE025E8DBC400081E41 /* UIView+IBInspectable.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F4431D325EA7A5000AC0A70 /* Kronon+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kronon+Color.swift"; sourceTree = "<group>"; };
+		2F4431D725EA7B8200AC0A70 /* KrononTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrononTabBarController.swift; sourceTree = "<group>"; };
 		2F71DCC625E4CC2600081E41 /* NewAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountViewController.swift; sourceTree = "<group>"; };
 		2F71DCCA25E4D21C00081E41 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		2F71DCE025E8DBC400081E41 /* UIView+IBInspectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+IBInspectable.swift"; sourceTree = "<group>"; };
@@ -49,6 +53,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F4431D625EA7AC100AC0A70 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				2F4431D725EA7B8200AC0A70 /* KrononTabBarController.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		2F4431DB25EA844E00AC0A70 /* TimeTable */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TimeTable;
+			sourceTree = "<group>";
+		};
+		2F4431DC25EA847600AC0A70 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
 		2F71DCC425E4CBEE00081E41 /* NewAccount */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +110,9 @@
 		2F83B56525DAC05F003142D4 /* kronon-ios */ = {
 			isa = PBXGroup;
 			children = (
+				2F4431DC25EA847600AC0A70 /* Account */,
+				2F4431DB25EA844E00AC0A70 /* TimeTable */,
+				2F4431D625EA7AC100AC0A70 /* Tabbar */,
 				2F71DCC925E4D1DA00081E41 /* Calendar */,
 				2F71DCC425E4CBEE00081E41 /* NewAccount */,
 				2F83B59625DCDC75003142D4 /* Top */,
@@ -98,6 +127,7 @@
 				2F83B59925DCE810003142D4 /* kronon.strings */,
 				2F71DCE025E8DBC400081E41 /* UIView+IBInspectable.swift */,
 				2F71DCE325E8DE7100081E41 /* AppTextField.swift */,
+				2F4431D325EA7A5000AC0A70 /* Kronon+Color.swift */,
 			);
 			path = "kronon-ios";
 			sourceTree = "<group>";
@@ -200,10 +230,12 @@
 				2F83B59025DCACAE003142D4 /* LoginViewController.swift in Sources */,
 				2F83B56B25DAC05F003142D4 /* ViewController.swift in Sources */,
 				2F71DCE125E8DBC500081E41 /* UIView+IBInspectable.swift in Sources */,
+				2F4431D825EA7B8200AC0A70 /* KrononTabBarController.swift in Sources */,
 				2F83B56725DAC05F003142D4 /* AppDelegate.swift in Sources */,
 				2F71DCC725E4CC2600081E41 /* NewAccountViewController.swift in Sources */,
 				2F83B56925DAC05F003142D4 /* SceneDelegate.swift in Sources */,
 				2F71DCE425E8DE7100081E41 /* AppTextField.swift in Sources */,
+				2F4431D425EA7A5000AC0A70 /* Kronon+Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
