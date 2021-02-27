@@ -15,7 +15,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordText: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         let mailLeftPadding = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 0))
         let passwordLeftPadding = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 0))

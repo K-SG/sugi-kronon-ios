@@ -31,10 +31,28 @@ class NewAccountViewController: UIViewController {
         passwordEditText.leftViewMode = .always
         passwordConfirmEditText.leftView = passwordConfirmLeftPadding
         passwordConfirmEditText.leftViewMode = .always
+        
         // Do any additional setup after loading the view.
         
     }
-    
+    //ライフサイクルメソッドの一つ
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+        super.viewWillAppear(animated)
+    }
+    //ライフサイクルメソッドの一つ
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        super.viewWillDisappear(animated)
+    }
+    //一つのメソッドの中でやる処理は一つ,
+    private func viewSetUp(){
+        
+    }
+    //
+    private func uiTextFieldRound(){
+        
+    }
 
     /*
     // MARK: - Navigation
