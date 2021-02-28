@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-extension UITextField {
+extension UIView {
     
     @IBInspectable var cornerRadius: CGFloat {
         get {
