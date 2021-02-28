@@ -202,14 +202,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="account_icon" translatesAutoresizingMaskIntoConstraints="NO" id="tB7-7r-3MA">
-                                <rect key="frame" x="137" y="206" width="101" height="101"/>
+                                <rect key="frame" x="137" y="223" width="101" height="101"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="101" id="MaG-FR-y8e"/>
                                     <constraint firstAttribute="height" constant="101" id="qcU-wM-fY4"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bf3-Qp-SVm">
-                                <rect key="frame" x="112.5" y="472.5" width="150" height="43"/>
+                                <rect key="frame" x="112.5" y="402" width="150" height="43"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="XTK-cm-4a4"/>
@@ -232,13 +232,13 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="藤本" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHi-cC-3GH">
-                                <rect key="frame" x="167" y="358.5" width="41" height="24"/>
+                                <rect key="frame" x="167" y="331.5" width="41" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.36078431370000003" green="0.35294117650000001" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fujimoto@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvx-F0-LXd">
-                                <rect key="frame" x="101.5" y="405.5" width="172" height="23"/>
+                                <rect key="frame" x="101.5" y="362" width="172" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" red="0.36078431370000003" green="0.35294117650000001" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -249,12 +249,12 @@
                         <constraints>
                             <constraint firstItem="tHi-cC-3GH" firstAttribute="centerX" secondItem="QXN-Eq-SzA" secondAttribute="centerX" id="8HG-HS-irx"/>
                             <constraint firstItem="tB7-7r-3MA" firstAttribute="centerX" secondItem="QXN-Eq-SzA" secondAttribute="centerX" id="FL2-h8-TCr"/>
-                            <constraint firstItem="tB7-7r-3MA" firstAttribute="centerY" secondItem="QXN-Eq-SzA" secondAttribute="centerY" multiplier="10:13" id="GwV-Ja-bXO"/>
-                            <constraint firstItem="tHi-cC-3GH" firstAttribute="centerY" secondItem="QXN-Eq-SzA" secondAttribute="centerY" multiplier="10:9" id="JeM-rq-biN"/>
-                            <constraint firstItem="qvx-F0-LXd" firstAttribute="centerX" secondItem="QXN-Eq-SzA" secondAttribute="centerX" id="eKN-yk-avU"/>
-                            <constraint firstItem="qvx-F0-LXd" firstAttribute="centerY" secondItem="QXN-Eq-SzA" secondAttribute="centerY" multiplier="10:8" id="hRi-ML-bB2"/>
-                            <constraint firstItem="bf3-Qp-SVm" firstAttribute="centerY" secondItem="QXN-Eq-SzA" secondAttribute="centerY" multiplier="10:6.75" id="xrE-ey-cig"/>
-                            <constraint firstItem="bf3-Qp-SVm" firstAttribute="centerX" secondItem="QXN-Eq-SzA" secondAttribute="centerX" id="yJV-0z-YDW"/>
+                            <constraint firstItem="tB7-7r-3MA" firstAttribute="centerY" secondItem="QXN-Eq-SzA" secondAttribute="centerY" constant="-60" id="GwV-Ja-bXO"/>
+                            <constraint firstItem="tHi-cC-3GH" firstAttribute="centerY" secondItem="QXN-Eq-SzA" secondAttribute="centerY" constant="10" id="JeM-rq-biN"/>
+                            <constraint firstItem="qvx-F0-LXd" firstAttribute="centerX" secondItem="QXN-Eq-SzA" secondAttribute="centerX" id="LF6-uH-zb9"/>
+                            <constraint firstItem="bf3-Qp-SVm" firstAttribute="centerX" secondItem="QXN-Eq-SzA" secondAttribute="centerX" id="qf1-Xw-CZd"/>
+                            <constraint firstItem="qvx-F0-LXd" firstAttribute="centerY" secondItem="QXN-Eq-SzA" secondAttribute="centerY" constant="40" id="rwK-y0-wbu"/>
+                            <constraint firstItem="bf3-Qp-SVm" firstAttribute="centerY" secondItem="QXN-Eq-SzA" secondAttribute="centerY" constant="90" id="szZ-Px-GNQ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="アカウント" id="bVI-P0-tIV"/>
@@ -504,7 +504,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="bC9-hx-nKj"/>
+        <segue reference="qJ2-94-oIg"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="account_icon" width="101" height="101"/>
