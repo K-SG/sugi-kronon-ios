@@ -22,6 +22,7 @@
 		2F83B57325DAC062003142D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F83B57125DAC062003142D4 /* LaunchScreen.storyboard */; };
 		2F83B59025DCACAE003142D4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F83B58E25DCACAE003142D4 /* LoginViewController.swift */; };
 		2F83B59A25DCE810003142D4 /* kronon.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F83B59925DCE810003142D4 /* kronon.strings */; };
+		2FD91C0925EE75060064E618 /* TimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD91C0825EE75060064E618 /* TimeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		2F83B57425DAC062003142D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F83B58E25DCACAE003142D4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2F83B59925DCE810003142D4 /* kronon.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = kronon.strings; sourceTree = "<group>"; };
+		2FD91C0825EE75060064E618 /* TimeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		2F4431DB25EA844E00AC0A70 /* TimeTable */ = {
 			isa = PBXGroup;
 			children = (
+				2FD91C0825EE75060064E618 /* TimeTableViewController.swift */,
 			);
 			path = TimeTable;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			files = (
 				2F71DCCB25E4D21C00081E41 /* CalendarViewController.swift in Sources */,
 				2F83B59025DCACAE003142D4 /* LoginViewController.swift in Sources */,
+				2FD91C0925EE75060064E618 /* TimeTableViewController.swift in Sources */,
 				2F83B56B25DAC05F003142D4 /* ViewController.swift in Sources */,
 				2F4431E525EB635F00AC0A70 /* ButtonCustomClass.swift in Sources */,
 				2F71DCE125E8DBC500081E41 /* UIView+IBInspectable.swift in Sources */,

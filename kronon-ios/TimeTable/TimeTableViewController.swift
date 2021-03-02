@@ -1,13 +1,13 @@
 //
-//  CalendarViewController.swift
+//  TimeTableViewController.swift
 //  kronon-ios
 //
-//  Created by 杉浩輝 on 2021/02/23.
+//  Created by 杉浩輝 on 2021/03/02.
 //
 
 import UIKit
 
-class CalendarViewController: UIViewController {
+class TimeTableViewController: UIViewController {
     var addScheduleButton: UIBarButtonItem! // 追加ボタン
 
     override func viewDidLoad() {
@@ -24,6 +24,7 @@ class CalendarViewController: UIViewController {
        print("追加ボタンが押されました")
      }
     
+
     /*
     // MARK: - Navigation
 

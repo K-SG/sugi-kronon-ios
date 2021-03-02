@@ -171,7 +171,7 @@
         <!--予定表-->
         <scene sceneID="Ozk-yu-2dP">
             <objects>
-                <viewController id="UxS-31-WhT" sceneMemberID="viewController">
+                <viewController id="UxS-31-WhT" customClass="TimeTableViewController" customModule="kronon_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tNq-AF-dpM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
