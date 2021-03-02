@@ -21,7 +21,8 @@ class TimeTableViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @objc func addButtonPressed(_ sender: UIBarButtonItem) {
-       print("追加ボタンが押されました")
+        print("追加ボタンが押されました")
+        self.performSegue(withIdentifier: "addSchedule", sender: self)
      }
     
 

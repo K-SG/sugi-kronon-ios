@@ -188,10 +188,29 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="予定表" id="scE-Q7-orI"/>
+                    <connections>
+                        <segue destination="3ts-Cj-qIk" kind="push" identifier="addSchedule" id="25l-0x-Sn7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hpP-mA-kad" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4535" y="510"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4dp-kR-6SL">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3ts-Cj-qIk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TJs-Xw-jfk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="WV7-Jg-IhP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2X9-8b-ASW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PBE-d2-5G6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5505" y="-282"/>
         </scene>
         <!--アカウント-->
         <scene sceneID="Q5w-g3-vca">
@@ -283,6 +302,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="カレンダー" id="8Y1-h2-sZI"/>
+                    <connections>
+                        <segue destination="3ts-Cj-qIk" kind="push" identifier="addSchedule" id="faI-3z-Ntf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TbU-oa-JK0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -505,6 +527,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="qJ2-94-oIg"/>
+        <segue reference="25l-0x-Sn7"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="account_icon" width="101" height="101"/>
