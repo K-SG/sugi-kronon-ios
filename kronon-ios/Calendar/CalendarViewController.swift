@@ -12,6 +12,8 @@ class CalendarViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        self.navigationItem.hidesBackButton = true
         //初期設定パターン① (アイコンを使うパターン)
         addScheduleButton = UIBarButtonItem(barButtonSystemItem: .compose, target: self, action: #selector(addButtonPressed(_:)))
         // ナビゲーションバー にボタンを追加
@@ -25,6 +27,21 @@ class CalendarViewController: UIViewController {
         self.performSegue(withIdentifier: "addSchedule", sender: self)
      }
     
+    override func viewDidLayoutSubviews() {
+//        navigationItem.hidesBackButton = true
+    }
+//    //ライフサイクルメソッドの一つ
+//    override func viewWillAppear(_ animated: Bool) {
+////        navigationItem.hidesBackButton = true
+//        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+//        super.viewWillAppear(animated)
+//    }
+//    
+//    //ライフサイクルメソッドの一つ
+//    override func viewWillDisappear(_ animated: Bool) {
+//        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+//        super.viewWillDisappear(animated)
+//    }
     /*
     // MARK: - Navigation
 

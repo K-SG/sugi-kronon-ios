@@ -17,12 +17,13 @@ class NewAccountViewController: UIViewController {
     @IBOutlet weak var passwordConfirmEditText: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+//        self.navigationItem.hidesBackButton = true
+        
         let nameLeftPadding = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 0))
         let emailLeftPadding = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 0))
         let passwordLeftPadding = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 0))
         let passwordConfirmLeftPadding = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 0))
-//
+
         nameEditText.leftView = nameLeftPadding
         nameEditText.leftViewMode = .always
         emailEditText.leftView = emailLeftPadding
@@ -37,9 +38,11 @@ class NewAccountViewController: UIViewController {
     }
     //ライフサイクルメソッドの一つ
     override func viewWillAppear(_ animated: Bool) {
+//        navigationItem.hidesBackButton = true
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
         super.viewWillAppear(animated)
     }
+    
     //ライフサイクルメソッドの一つ
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)

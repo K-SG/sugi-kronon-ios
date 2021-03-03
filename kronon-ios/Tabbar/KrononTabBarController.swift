@@ -19,7 +19,10 @@ class KrononTabBarController: UITabBarController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func logoutTouuchUpInside(_ sender: Any) {
+        print("logout")
+    }
+    
     /*
     // MARK: - Navigation
 
