@@ -59,12 +59,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1044.9275362318842" y="88.043478260869577"/>
+            <point key="canvasLocation" x="1009" y="88"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="odi-Kd-dI6">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="JFL-fh-7xP" customClass="LoginViewController" customModule="kronon_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="JFL-fh-7xP" customClass="LoginViewController" customModule="kronon_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gsp-lK-jLi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -168,7 +168,7 @@
             </objects>
             <point key="canvasLocation" x="1828.985507246377" y="83.152173913043484"/>
         </scene>
-        <!--予定表-->
+        <!--カレンダー-->
         <scene sceneID="Ozk-yu-2dP">
             <objects>
                 <viewController id="UxS-31-WhT" customClass="CalendarViewController" customModule="kronon_ios" customModuleProvider="target" sceneMemberID="viewController">
@@ -188,10 +188,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="カレンダー" image="tabbar_calendar_icon" id="9ZQ-s0-aqS"/>
-                    <navigationItem key="navigationItem" title="予定表" id="scE-Q7-orI"/>
-                    <connections>
-                        <segue destination="3ts-Cj-qIk" kind="push" identifier="addSchedule" id="25l-0x-Sn7"/>
-                    </connections>
+                    <navigationItem key="navigationItem" title="カレンダー" id="scE-Q7-orI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hpP-mA-kad" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -200,7 +197,7 @@
         <!--View Controller-->
         <scene sceneID="4dp-kR-6SL">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3ts-Cj-qIk" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="addSchedule" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3ts-Cj-qIk" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TJs-Xw-jfk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -211,12 +208,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PBE-d2-5G6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6242" y="-304"/>
+            <point key="canvasLocation" x="3450" y="-663"/>
         </scene>
         <!--アカウント-->
         <scene sceneID="Q5w-g3-vca">
             <objects>
-                <viewController title="アカウント" id="maW-ep-c80" sceneMemberID="viewController">
+                <viewController title="アカウント" id="maW-ep-c80" customClass="DetailAccountViewController" customModule="kronon_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QXN-Eq-SzA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -287,7 +284,7 @@
         <!--予定表-->
         <scene sceneID="tFu-1O-gZq">
             <objects>
-                <viewController title="予定表" id="chg-gv-So1" customClass="CalendarViewController" customModule="kronon_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="予定表" id="chg-gv-So1" customClass="TimeTableViewController" customModule="kronon_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MU2-8l-8i6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -305,18 +302,15 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="予定表" image="tabbar_clock_icon" id="TqS-SW-9LU"/>
                     <navigationItem key="navigationItem" title="カレンダー" id="8Y1-h2-sZI"/>
-                    <connections>
-                        <segue destination="3ts-Cj-qIk" kind="push" identifier="addSchedule" id="faI-3z-Ntf"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TbU-oa-JK0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4558" y="160"/>
         </scene>
-        <!--Kronon Tab Bar Controller-->
+        <!--カレンダー-->
         <scene sceneID="Hqf-fs-Ge3">
             <objects>
-                <tabBarController id="i9f-U2-t8h" customClass="KrononTabBarController" customModule="kronon_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController title="カレンダー" automaticallyAdjustsScrollViewInsets="NO" id="i9f-U2-t8h" customClass="KrononTabBarController" customModule="kronon_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="5Vr-co-pG1"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nAA-bb-4s7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -324,14 +318,15 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="UxS-31-WhT" kind="relationship" relationship="viewControllers" id="oAi-yu-XpE"/>
+                        <segue destination="UxS-31-WhT" kind="relationship" relationship="viewControllers" destinationCreationSelector="カレンダー" id="oAi-yu-XpE"/>
                         <segue destination="chg-gv-So1" kind="relationship" relationship="viewControllers" id="cNy-0r-hFP"/>
                         <segue destination="maW-ep-c80" kind="relationship" relationship="viewControllers" id="314-Pn-IoC"/>
+                        <segue destination="3ts-Cj-qIk" kind="push" id="dhd-3o-VPw"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qtX-A7-t6D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3058" y="406"/>
+            <point key="canvasLocation" x="2988" y="357"/>
         </scene>
         <!--アカウント作成-->
         <scene sceneID="YxG-Wi-xu6">
@@ -489,7 +484,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="qJ2-94-oIg"/>
-        <segue reference="faI-3z-Ntf"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="account_icon" width="101" height="101"/>

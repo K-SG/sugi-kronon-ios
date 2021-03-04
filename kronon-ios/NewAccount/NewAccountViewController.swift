@@ -8,17 +8,14 @@
 import UIKit
 
 class NewAccountViewController: UIViewController {
-
-    
-    
     @IBOutlet weak var nameEditText: UITextField!
     @IBOutlet weak var emailEditText: UITextField!
     @IBOutlet weak var passwordEditText: UITextField!
     @IBOutlet weak var passwordConfirmEditText: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.navigationItem.hidesBackButton = true
         
+//        self.navigationItem.hidesBackButton = true
         let nameLeftPadding = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 0))
         let emailLeftPadding = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 0))
         let passwordLeftPadding = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 0))
@@ -40,6 +37,7 @@ class NewAccountViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
 //        navigationItem.hidesBackButton = true
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
+        self.parent?.navigationItem.title = "アカウント"
         super.viewWillAppear(animated)
     }
     

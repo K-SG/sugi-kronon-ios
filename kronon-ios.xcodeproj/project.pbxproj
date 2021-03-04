@@ -23,6 +23,7 @@
 		2F83B59025DCACAE003142D4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F83B58E25DCACAE003142D4 /* LoginViewController.swift */; };
 		2F83B59A25DCE810003142D4 /* kronon.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F83B59925DCE810003142D4 /* kronon.strings */; };
 		2FD91C0925EE75060064E618 /* TimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD91C0825EE75060064E618 /* TimeTableViewController.swift */; };
+		2FD91C0C25F11FDB0064E618 /* DetailAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD91C0B25F11FDB0064E618 /* DetailAccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		2F83B58E25DCACAE003142D4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2F83B59925DCE810003142D4 /* kronon.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = kronon.strings; sourceTree = "<group>"; };
 		2FD91C0825EE75060064E618 /* TimeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableViewController.swift; sourceTree = "<group>"; };
+		2FD91C0B25F11FDB0064E618 /* DetailAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 		2F4431DC25EA847600AC0A70 /* Account */ = {
 			isa = PBXGroup;
 			children = (
+				2FD91C0B25F11FDB0064E618 /* DetailAccountViewController.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				2F71DCE125E8DBC500081E41 /* UIView+IBInspectable.swift in Sources */,
 				2F4431D825EA7B8200AC0A70 /* KrononTabBarController.swift in Sources */,
 				2F83B56725DAC05F003142D4 /* AppDelegate.swift in Sources */,
+				2FD91C0C25F11FDB0064E618 /* DetailAccountViewController.swift in Sources */,
 				2F71DCC725E4CC2600081E41 /* NewAccountViewController.swift in Sources */,
 				2F83B56925DAC05F003142D4 /* SceneDelegate.swift in Sources */,
 				2F71DCE425E8DE7100081E41 /* AppTextField.swift in Sources */,

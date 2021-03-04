@@ -2,7 +2,7 @@
 //  DetailAccountViewController.swift
 //  kronon-ios
 //
-//  Created by 杉浩輝 on 2021/02/28.
+//  Created by 杉浩輝 on 2021/03/04.
 //
 
 import UIKit
@@ -11,8 +11,12 @@ class DetailAccountViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+        self.parent?.navigationItem.title = "アカウント"
+        super.viewWillAppear(animated)
     }
     
 
