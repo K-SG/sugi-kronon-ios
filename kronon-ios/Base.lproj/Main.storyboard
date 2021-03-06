@@ -247,6 +247,10 @@
                                         <color key="value" red="0.36078431370000003" green="0.35294117650000001" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="logoutButton:" destination="maW-ep-c80" eventType="touchUpInside" id="Fpi-oW-5Ox"/>
+                                    <action selector="logoutButton:" destination="qHW-7L-YeT" eventType="touchUpInside" id="hhC-gJ-ovj"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="藤本" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHi-cC-3GH">
                                 <rect key="frame" x="167" y="331.5" width="41" height="24"/>
@@ -278,6 +282,7 @@
                     <navigationItem key="navigationItem" title="アカウント" id="bVI-P0-tIV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e0w-1d-CLk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="qHW-7L-YeT" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4558" y="940"/>
         </scene>

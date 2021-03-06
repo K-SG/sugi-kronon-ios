@@ -8,7 +8,6 @@
 import UIKit
 
 class DetailAccountViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -17,6 +16,20 @@ class DetailAccountViewController: UIViewController {
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
         self.parent?.navigationItem.title = "アカウント"
         super.viewWillAppear(animated)
+    }
+    @IBAction func logoutButton(_ sender: Any) {
+        print("ログアウトボタンが押されました")
+        // layere_number：階層番号を表す。０がトップ画面（rootView）
+        let layere_number = navigationController!.viewControllers.count
+     
+        self.navigationController?.popToViewController(navigationController!.viewControllers[layere_number-2], animated: true)
+//        self.navigationController?.popViewController(animated: true)
+        
+        
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        super.viewWillDisappear(animated)
     }
     
 

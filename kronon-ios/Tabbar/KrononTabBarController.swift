@@ -18,11 +18,11 @@ class KrononTabBarController: UITabBarController {
         UITabBar.appearance().tintColor = SoreppoiAppColor.tabIcon
         // 背景色を変更できます！
         UITabBar.appearance().barTintColor = SoreppoiAppColor.tabBackground
-        //初期設定パターン① (アイコンを使うパターン)
-        addScheduleButton = UIBarButtonItem(barButtonSystemItem: .compose, target: self, action: #selector(addButtonPressed(_:)))
-        // ナビゲーションバー にボタンを追加
-        self.navigationItem.rightBarButtonItem = addScheduleButton
-        addScheduleButton.tintColor = UIColor.gray
+//        //初期設定パターン① (アイコンを使うパターン)
+//        addScheduleButton = UIBarButtonItem(barButtonSystemItem: .compose, target: self, action: #selector(addButtonPressed(_:)))
+//        // ナビゲーションバー にボタンを追加
+//        self.navigationItem.rightBarButtonItem = addScheduleButton
+//        addScheduleButton.tintColor = UIColor.gray
 
         // Do any additional setup after loading the view.
     }
@@ -43,6 +43,9 @@ class KrononTabBarController: UITabBarController {
 //        super.viewWillDisappear(animated)
 //    }
     
+    @IBAction func logoutButton(_ sender: Any) {
+        print("logout")
+    }
     @IBAction func logoutTouuchUpInside(_ sender: Any) {
         print("logout")
     }
