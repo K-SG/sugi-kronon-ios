@@ -24,6 +24,7 @@
 		2F83B59A25DCE810003142D4 /* kronon.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F83B59925DCE810003142D4 /* kronon.strings */; };
 		2FD91C0925EE75060064E618 /* TimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD91C0825EE75060064E618 /* TimeTableViewController.swift */; };
 		2FD91C0C25F11FDB0064E618 /* DetailAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD91C0B25F11FDB0064E618 /* DetailAccountViewController.swift */; };
+		2FD91C1125F383650064E618 /* addScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD91C1025F383640064E618 /* addScheduleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		2F83B59925DCE810003142D4 /* kronon.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = kronon.strings; sourceTree = "<group>"; };
 		2FD91C0825EE75060064E618 /* TimeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableViewController.swift; sourceTree = "<group>"; };
 		2FD91C0B25F11FDB0064E618 /* DetailAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAccountViewController.swift; sourceTree = "<group>"; };
+		2FD91C1025F383640064E618 /* addScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addScheduleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		2F83B56525DAC05F003142D4 /* kronon-ios */ = {
 			isa = PBXGroup;
 			children = (
+				2FD91C0E25F381480064E618 /* addScehdule */,
 				2F4431DC25EA847600AC0A70 /* Account */,
 				2F4431DB25EA844E00AC0A70 /* TimeTable */,
 				2F4431D625EA7AC100AC0A70 /* Tabbar */,
@@ -162,6 +165,14 @@
 				2F83B56A25DAC05F003142D4 /* ViewController.swift */,
 			);
 			path = Top;
+			sourceTree = "<group>";
+		};
+		2FD91C0E25F381480064E618 /* addScehdule */ = {
+			isa = PBXGroup;
+			children = (
+				2FD91C1025F383640064E618 /* addScheduleViewController.swift */,
+			);
+			path = addScehdule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +259,7 @@
 				2F83B56925DAC05F003142D4 /* SceneDelegate.swift in Sources */,
 				2F71DCE425E8DE7100081E41 /* AppTextField.swift in Sources */,
 				2F4431D425EA7A5000AC0A70 /* Kronon+Color.swift in Sources */,
+				2FD91C1125F383650064E618 /* addScheduleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
