@@ -22,7 +22,7 @@ class DetailAccountViewController: UIViewController {
         // layere_number：階層番号を表す。０がトップ画面（rootView）
         let layere_number = navigationController!.viewControllers.count
      
-        self.navigationController?.popToViewController(navigationController!.viewControllers[layere_number-2], animated: true)
+        self.navigationController?.popToViewController(navigationController!.viewControllers[layere_number-3], animated: true)
 //        self.navigationController?.popViewController(animated: true)
         
         
