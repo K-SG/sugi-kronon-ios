@@ -10,12 +10,26 @@ import UIKit
 class DetailAccountViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+//        self.navigationItem.rightBarButtonItems = UIBarButtonItem(
+//            title: "",
+//            style: .plain,
+//            target: nil,
+//            action: nil
+//        )
+
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
         self.parent?.navigationItem.title = "アカウント"
+
+
+//        if let button = self.navigationItem.rightBarButtonItem {
+//                            button.isEnabled = false
+//                            button.tintColor = UIColor.clear
+//                        }
         super.viewWillAppear(animated)
+        
     }
     @IBAction func logoutButton(_ sender: Any) {
         print("ログアウトボタンが押されました")

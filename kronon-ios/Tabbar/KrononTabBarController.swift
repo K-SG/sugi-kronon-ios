@@ -23,13 +23,16 @@ class KrononTabBarController: UITabBarController {
         // ナビゲーションバー にボタンを追加
         self.navigationItem.rightBarButtonItem = addScheduleButton
         addScheduleButton.tintColor = UIColor.gray
+        
 
         // Do any additional setup after loading the view.
         
     }
     @objc func addButtonPressed(_ sender: UIBarButtonItem) {
         print("追加ボタンが押されました")
-        self.performSegue(withIdentifier: "addSchedule", sender: self)
+        let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "addSchedule") as! addScheduleViewController
+        self.present(secondViewController, animated: true, completion: nil)
+//        self.performSegue(withIdentifier: "addSchedule", sender: self)
      }
     //ライフサイクルメソッドの一つ
 //    override func viewWillAppear(_ animated: Bool) {
