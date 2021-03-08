@@ -10,6 +10,12 @@ import UIKit
 class CalendarViewController: UIViewController {
     var addScheduleButton: UIBarButtonItem! // 追加ボタン
 
+    @IBOutlet weak var headerPreButton: UIButton!
+    @IBOutlet weak var headerNextButton: UIButton!
+    @IBOutlet weak var headerTitle: UILabel!
+    @IBOutlet weak var calendarHeaderView: UIView!
+    @IBOutlet weak var calemdarCollectionView: UICollectionView!
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -22,6 +28,11 @@ class CalendarViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
@@ -35,6 +46,11 @@ class CalendarViewController: UIViewController {
         self.performSegue(withIdentifier: "addSchedule", sender: self)
     }
     
+    @IBAction func tappedHeaderPrevButton(sender: UIButton) {
+    }
+
+    @IBAction func tappedHeaderNextButton(sender: UIButton) {
+    }
 
 }
 

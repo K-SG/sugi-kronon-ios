@@ -14,6 +14,7 @@
 		2F71DCCB25E4D21C00081E41 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F71DCCA25E4D21C00081E41 /* CalendarViewController.swift */; };
 		2F71DCE125E8DBC500081E41 /* UIView+IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F71DCE025E8DBC400081E41 /* UIView+IBInspectable.swift */; };
 		2F71DCE425E8DE7100081E41 /* AppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F71DCE325E8DE7100081E41 /* AppTextField.swift */; };
+		2F7C8E9325F5FF7200690DBC /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7C8E9225F5FF7200690DBC /* CalendarCell.swift */; };
 		2F83B56725DAC05F003142D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F83B56625DAC05F003142D4 /* AppDelegate.swift */; };
 		2F83B56925DAC05F003142D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F83B56825DAC05F003142D4 /* SceneDelegate.swift */; };
 		2F83B56B25DAC05F003142D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F83B56A25DAC05F003142D4 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 		2F71DCCA25E4D21C00081E41 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		2F71DCE025E8DBC400081E41 /* UIView+IBInspectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+IBInspectable.swift"; sourceTree = "<group>"; };
 		2F71DCE325E8DE7100081E41 /* AppTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextField.swift; sourceTree = "<group>"; };
+		2F7C8E9225F5FF7200690DBC /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		2F83B56325DAC05F003142D4 /* kronon-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kronon-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F83B56625DAC05F003142D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F83B56825DAC05F003142D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				2F71DCCA25E4D21C00081E41 /* CalendarViewController.swift */,
+				2F7C8E9225F5FF7200690DBC /* CalendarCell.swift */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				2F83B59025DCACAE003142D4 /* LoginViewController.swift in Sources */,
 				2FD91C0925EE75060064E618 /* TimeTableViewController.swift in Sources */,
 				2F83B56B25DAC05F003142D4 /* ViewController.swift in Sources */,
+				2F7C8E9325F5FF7200690DBC /* CalendarCell.swift in Sources */,
 				2F4431E525EB635F00AC0A70 /* ButtonCustomClass.swift in Sources */,
 				2F71DCE125E8DBC500081E41 /* UIView+IBInspectable.swift in Sources */,
 				2F4431D825EA7B8200AC0A70 /* KrononTabBarController.swift in Sources */,
