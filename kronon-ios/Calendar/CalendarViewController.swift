@@ -19,7 +19,7 @@ class CalendarViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        //初期設定パターン① (アイコンを使うパターン)
+        //初期設定パターン① (アイコンを使うパターン)テスト
         addScheduleButton = UIBarButtonItem(barButtonSystemItem: .compose, target: self, action: #selector(addButtonPressed(_:)))
         // ナビゲーションバー にボタンを追加
         self.navigationItem.rightBarButtonItem = addScheduleButton
