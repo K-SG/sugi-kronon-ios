@@ -172,7 +172,8 @@
         <!--カレンダー-->
         <scene sceneID="Ozk-yu-2dP">
             <objects>
-                <viewController id="UxS-31-WhT" customClass="CalendarViewController" customModule="kronon_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hpP-mA-kad" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="UxS-31-WhT" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tNq-AF-dpM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -243,15 +244,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="カレンダー" image="tabbar_calendar_icon" id="9ZQ-s0-aqS"/>
                     <navigationItem key="navigationItem" title="カレンダー" id="scE-Q7-orI"/>
-                    <connections>
-                        <outlet property="calemdarCollectionView" destination="lhr-Bv-j5L" id="Xd2-l1-MxJ"/>
-                        <outlet property="calendarHeaderView" destination="0WH-IG-7Mu" id="fMj-Ov-NIU"/>
-                        <outlet property="headerNextButton" destination="nEC-O9-9xH" id="BNk-DU-9J1"/>
-                        <outlet property="headerPreButton" destination="aIg-nn-gBK" id="7pZ-9G-L4p"/>
-                        <outlet property="headerTitle" destination="1MI-vR-mhn" id="AhM-eI-SQn"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hpP-mA-kad" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4557.971014492754" y="-712.5"/>
         </scene>
@@ -520,6 +513,7 @@
                         <segue destination="UxS-31-WhT" kind="relationship" relationship="viewControllers" destinationCreationSelector="カレンダー" id="oAi-yu-XpE"/>
                         <segue destination="chg-gv-So1" kind="relationship" relationship="viewControllers" id="cNy-0r-hFP"/>
                         <segue destination="maW-ep-c80" kind="relationship" relationship="viewControllers" id="314-Pn-IoC"/>
+                        <segue destination="BcY-fx-pJb" kind="relationship" relationship="viewControllers" id="Fgj-tD-pcX"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qtX-A7-t6D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -682,12 +676,164 @@
             </objects>
             <point key="canvasLocation" x="1828" y="-711"/>
         </scene>
+        <!--Calendar-->
+        <scene sceneID="SEa-kX-RiQ">
+            <objects>
+                <viewController id="BcY-fx-pJb" customClass="CalendarViewController" customModule="kronon_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VRp-V3-s6z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aAe-i7-5wv">
+                                <rect key="frame" x="0.0" y="37" width="414" height="478"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="FCa-kb-YEF">
+                                        <rect key="frame" x="0.0" y="44" width="414" height="434"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2SN-Ot-bNr">
+                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CalendarCell" id="cBB-Jb-cx4" customClass="CalendarCell" customModule="Calendar" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CalendarStar" translatesAutoresizingMaskIntoConstraints="NO" id="CmQ-6V-gce">
+                                                            <rect key="frame" x="8.6666666666666643" y="7" width="33" height="36"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="36" id="NvF-tE-9Wr"/>
+                                                                <constraint firstAttribute="width" constant="33" id="ovQ-2u-TTO"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Def-dl-VrE">
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </view>
+                                                <constraints>
+                                                    <constraint firstItem="CmQ-6V-gce" firstAttribute="centerX" secondItem="cBB-Jb-cx4" secondAttribute="centerX" id="MN4-8P-9oz"/>
+                                                    <constraint firstItem="Def-dl-VrE" firstAttribute="top" secondItem="cBB-Jb-cx4" secondAttribute="top" id="OWq-DF-Iye"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Def-dl-VrE" secondAttribute="bottom" id="W2f-vL-a4N"/>
+                                                    <constraint firstItem="CmQ-6V-gce" firstAttribute="centerY" secondItem="cBB-Jb-cx4" secondAttribute="centerY" id="Wgf-CR-8tu"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Def-dl-VrE" secondAttribute="trailing" id="ml8-lS-2Dc"/>
+                                                    <constraint firstItem="Def-dl-VrE" firstAttribute="leading" secondItem="cBB-Jb-cx4" secondAttribute="leading" id="u8m-aF-SVw"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="starImage" destination="CmQ-6V-gce" id="2zc-Sm-Ewa"/>
+                                                    <outlet property="textLabel" destination="Def-dl-VrE" id="DeX-OH-03a"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BcY-fx-pJb" id="Eu2-oj-1zg"/>
+                                            <outlet property="delegate" destination="BcY-fx-pJb" id="okV-kF-dT1"/>
+                                        </connections>
+                                    </collectionView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0L8-Tl-Z4z">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCO-kx-mAk">
+                                                <rect key="frame" x="354" y="0.0" width="60" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="PRl-yI-LSj"/>
+                                                    <constraint firstAttribute="width" constant="60" id="kBf-Lc-lMR"/>
+                                                </constraints>
+                                                <state key="normal" title="Next">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="tapNext:" destination="BcY-fx-pJb" eventType="touchUpInside" id="hBr-8q-HQx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUM-Il-lHS">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="Z9b-34-aRz"/>
+                                                    <constraint firstAttribute="height" constant="44" id="g2S-MM-XUU"/>
+                                                </constraints>
+                                                <state key="normal" title="Prev">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="tapPrev:" destination="BcY-fx-pJb" eventType="touchUpInside" id="pbW-h7-YHO"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAO-De-ZtH">
+                                                <rect key="frame" x="139.66666666666666" y="6" width="134.99999999999997" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="32" id="9cC-EE-Gov"/>
+                                                    <constraint firstAttribute="width" constant="135" id="jMw-40-17o"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.36796575780000002" green="0.79493993519999995" blue="0.91673564910000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="jAO-De-ZtH" firstAttribute="centerX" secondItem="0L8-Tl-Z4z" secondAttribute="centerX" id="9x8-Na-NyJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="TCO-kx-mAk" secondAttribute="trailing" id="KSD-gP-Ms7"/>
+                                            <constraint firstAttribute="bottom" secondItem="aUM-Il-lHS" secondAttribute="bottom" id="LFo-zV-Lbd"/>
+                                            <constraint firstAttribute="bottom" secondItem="TCO-kx-mAk" secondAttribute="bottom" id="LoI-VI-YxW"/>
+                                            <constraint firstItem="TCO-kx-mAk" firstAttribute="top" secondItem="0L8-Tl-Z4z" secondAttribute="top" id="PFn-I5-c9n"/>
+                                            <constraint firstItem="jAO-De-ZtH" firstAttribute="centerY" secondItem="0L8-Tl-Z4z" secondAttribute="centerY" id="iQh-dU-Ub4"/>
+                                            <constraint firstAttribute="height" constant="44" id="rHr-Pg-PQs"/>
+                                            <constraint firstItem="aUM-Il-lHS" firstAttribute="top" secondItem="0L8-Tl-Z4z" secondAttribute="top" id="vIE-Oe-1Kf"/>
+                                            <constraint firstItem="aUM-Il-lHS" firstAttribute="leading" secondItem="0L8-Tl-Z4z" secondAttribute="leading" id="vYp-K0-Lq1"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="0L8-Tl-Z4z" firstAttribute="leading" secondItem="aAe-i7-5wv" secondAttribute="leading" id="DfR-Ky-WSa"/>
+                                    <constraint firstItem="FCa-kb-YEF" firstAttribute="top" secondItem="0L8-Tl-Z4z" secondAttribute="bottom" id="Z9c-l8-VBH"/>
+                                    <constraint firstAttribute="trailing" secondItem="FCa-kb-YEF" secondAttribute="trailing" id="ewm-Wx-b3E"/>
+                                    <constraint firstItem="0L8-Tl-Z4z" firstAttribute="top" secondItem="aAe-i7-5wv" secondAttribute="top" id="jOR-m4-1SM"/>
+                                    <constraint firstAttribute="trailing" secondItem="0L8-Tl-Z4z" secondAttribute="trailing" id="l04-ap-IL9"/>
+                                    <constraint firstAttribute="height" constant="478" id="n5O-AW-9D3"/>
+                                    <constraint firstAttribute="bottom" secondItem="FCa-kb-YEF" secondAttribute="bottom" id="uib-Cd-MbU"/>
+                                    <constraint firstItem="FCa-kb-YEF" firstAttribute="leading" secondItem="aAe-i7-5wv" secondAttribute="leading" id="xOD-EN-xZt"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HMh-ho-cm7"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.74498155379999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aAe-i7-5wv" firstAttribute="trailing" secondItem="HMh-ho-cm7" secondAttribute="trailing" id="Cwa-Tp-tjx"/>
+                            <constraint firstItem="aAe-i7-5wv" firstAttribute="top" secondItem="HMh-ho-cm7" secondAttribute="top" constant="37" id="fzr-pp-VYs"/>
+                            <constraint firstItem="aAe-i7-5wv" firstAttribute="leading" secondItem="HMh-ho-cm7" secondAttribute="leading" id="ugd-Jy-7sU"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Ixe-rY-kbN"/>
+                    <navigationItem key="navigationItem" title="Calendar" id="LD4-e1-K3U"/>
+                    <connections>
+                        <outlet property="calendarCollectionView" destination="FCa-kb-YEF" id="oDI-8W-0aV"/>
+                        <outlet property="headerBaseView" destination="0L8-Tl-Z4z" id="Z2Y-kZ-QMA"/>
+                        <outlet property="nextButton" destination="TCO-kx-mAk" id="aWY-cr-aYN"/>
+                        <outlet property="prevButton" destination="aUM-Il-lHS" id="EsO-tV-h2r"/>
+                        <outlet property="titleLabel" destination="jAO-De-ZtH" id="l8J-r6-rDT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hnR-SD-fIA" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3704" y="-712"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="qJ2-94-oIg"/>
         <segue reference="UlU-bl-jRN"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="CalendarStar" width="32" height="29"/>
         <image name="account_icon" width="101" height="101"/>
         <image name="login_star" width="189" height="194"/>
         <image name="login_text" width="327" height="48"/>

@@ -9,11 +9,11 @@ import UIKit
 
 class CalendarCell: UICollectionViewCell {
     
-    var textLabel: UILabel!
-    @IBOutlet weak var calendarLabel: UILabel!
+    @IBOutlet weak var textLabel: UILabel!
+    @IBOutlet weak var starImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
     }
-    
 }
