@@ -10,11 +10,14 @@ import UIKit
 class DetailAccountViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
         self.parent?.navigationItem.title = "アカウント"
+        //tabbarControllerにnavigationが入っている
+//        tabBarController?.navigationItem.rightBarButtonItems?.removeAll()
         super.viewWillAppear(animated)
         
     }
