@@ -31,7 +31,12 @@ class LoginViewController: UIViewController {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
         super.viewWillAppear(animated)
     }
-
+    @IBAction func loginButton(_ sender: Any) {
+        let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "calendar") as! KrononTabBarController
+        self.navigationController?.pushViewController(secondViewController, animated: true)
+        
+    }
+    
 //    //ライフサイクルメソッドの一つ
 //    override func viewWillDisappear(_ animated: Bool) {
 //        self.navigationController?.setNavigationBarHidden(false, animated: animated)

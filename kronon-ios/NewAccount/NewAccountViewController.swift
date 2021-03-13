@@ -40,6 +40,10 @@ class NewAccountViewController: UIViewController {
         self.parent?.navigationItem.title = "アカウント"
         super.viewWillAppear(animated)
     }
+    @IBAction func addAccountButton(_ sender: Any) {
+        let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "calendar") as! KrononTabBarController
+        self.navigationController?.pushViewController(secondViewController, animated: true)
+    }
     
     //ライフサイクルメソッドの一つ
     override func viewWillDisappear(_ animated: Bool) {
