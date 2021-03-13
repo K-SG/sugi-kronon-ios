@@ -690,6 +690,12 @@
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dcu-9b-AgL">
+                                                            <rect key="frame" x="4" y="29" width="42" height="13"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
                                                 </view>
                                                 <constraints>
@@ -699,6 +705,7 @@
                                                     <constraint firstItem="Def-dl-VrE" firstAttribute="leading" secondItem="cBB-Jb-cx4" secondAttribute="leading" id="u8m-aF-SVw"/>
                                                 </constraints>
                                                 <connections>
+                                                    <outlet property="scheduleLabel" destination="Dcu-9b-AgL" id="JdT-Pd-Ptn"/>
                                                     <outlet property="textLabel" destination="Def-dl-VrE" id="DeX-OH-03a"/>
                                                 </connections>
                                             </collectionViewCell>
