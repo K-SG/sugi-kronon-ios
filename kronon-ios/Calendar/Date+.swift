@@ -23,4 +23,19 @@ extension Date{
         dateComponents.month = addValue
         return calendar.date(byAdding: dateComponents, to: self)
     }
+    func dayLaterDate() -> Date? {
+        let addValue = 1
+        let calendar = Calendar.current
+        var dateComponents = DateComponents()
+        dateComponents.day = addValue
+        return calendar.date(byAdding: dateComponents, to: self)
+    }
+    func dayAgoDate() -> Date? {
+        let addValue = -1
+        let calendar = Calendar.current
+        var dateComponents = DateComponents()
+        dateComponents.day = addValue
+        return calendar.date(byAdding: dateComponents, to: self)
+    }
+    
 }

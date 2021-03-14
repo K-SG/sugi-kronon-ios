@@ -10,6 +10,11 @@ import UIKit
 class TimeTableViewController: UIViewController {
     var addScheduleButton: UIBarButtonItem! // 追加ボタン
 
+    @IBOutlet weak var dateHeader: UILabel!
+    let today = Date()
+    var selectedDate = Date()
+    let dateManager = DateManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // アイコンの色を変更できます！
@@ -21,6 +26,7 @@ class TimeTableViewController: UIViewController {
         // ナビゲーションバー にボタンを追加
         self.navigationItem.rightBarButtonItem = addScheduleButton
         addScheduleButton.tintColor = UIColor.gray
+        dateHeader.text = changeHeaderTitle(date: today)
 
         // Do any additional setup after loading the view.
     }
@@ -34,7 +40,28 @@ class TimeTableViewController: UIViewController {
     @objc func addButtonPressed(_ sender: UIBarButtonItem) {
         print("追加ボタンが押されました")
         self.performSegue(withIdentifier: "addSchedule", sender: self)
-     }
+    }
+    
+    func changeHeaderTitle(date: Date) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy/MM/ddの予定"
+        let selectMonth = formatter.string(from: date)
+        return selectMonth
+    }
+    @IBAction func preDayButton(_ sender: Any) {
+        if let date = dateManager.prevDay(date: selectedDate){
+            selectedDate = date
+            dateHeader.text = changeHeaderTitle(date: selectedDate)
+        }
+    }
+    @IBAction func nextDayButton(_ sender: Any) {
+        if let date = dateManager.nextDay(date: selectedDate){
+            selectedDate = date
+            dateHeader.text = changeHeaderTitle(date: selectedDate)
+        }
+    }
+    
+    
     
     
 
