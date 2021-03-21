@@ -94,6 +94,38 @@
             filePath = "../Calendar-Sample-master/Calendar/CalendarViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EBCE67F2-1651-4ACC-BD67-3D616C694DD7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Calendar-Sample-master/Calendar/CalendarViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D7B4FC54-36A8-4ACE-8587-E93BD346A645"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Calendar-Sample-master/Calendar/CalendarViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
             startingLineNumber = "107"
             endingLineNumber = "107"
             landmarkName = "collectionView(_:cellForItemAt:)"
@@ -103,7 +135,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "EBCE67F2-1651-4ACC-BD67-3D616C694DD7"
+            uuid = "1942359C-6F09-4B0D-A235-2ABC6203D6A8"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -119,33 +151,143 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D7B4FC54-36A8-4ACE-8587-E93BD346A645"
+            uuid = "44319201-2B77-4120-9080-3C8309E61F3F"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../Calendar-Sample-master/Calendar/CalendarViewController.swift"
+            filePath = "kronon-ios/NewAccount/NewAccountViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
-            landmarkName = "collectionView(_:cellForItemAt:)"
-            landmarkType = "7">
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "NewAccountViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "44319201-2B77-4120-9080-3C8309E61F3F - fecb6884970f204a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "kronon_ios.NewAccountViewController.addAccountButton(Any) -&gt; ()"
+                  moduleName = "kronon-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kokisugi/IOSProjects/kronon-ios/kronon-ios/NewAccount/NewAccountViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "3594">
+               </Location>
+               <Location
+                  uuid = "44319201-2B77-4120-9080-3C8309E61F3F - 66c573f59bf8c1f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in kronon_ios.NewAccountViewController.addAccountButton(Any) -&gt; ()"
+                  moduleName = "kronon-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kokisugi/IOSProjects/kronon-ios/kronon-ios/NewAccount/NewAccountViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "389">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1942359C-6F09-4B0D-A235-2ABC6203D6A8"
+            uuid = "43DC87A4-0683-4E02-A77F-8439EC6BCE04"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../Calendar-Sample-master/Calendar/CalendarViewController.swift"
+            filePath = "kronon-ios/NewAccount/NewAccountViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
-            landmarkName = "collectionView(_:cellForItemAt:)"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "NewAccountViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "436AA64D-B339-4006-8F6B-D2135C77C3BD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "kronon-ios/NewAccount/NewAccountViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "NewAccountViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6B32CF11-41D1-40E4-8FEC-F672DD6FC40D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "kronon-ios/NewAccount/NewAccountViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F75F0923-CC39-487A-8AFC-1F803A36AA81"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "kronon-ios/NewAccount/NewAccountViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "viewWillDisappear(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F75F0923-CC39-487A-8AFC-1F803A36AA81 - fecb6884970f2cb0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "kronon_ios.NewAccountViewController.addAccountButton(Any) -&gt; ()"
+                  moduleName = "kronon-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kokisugi/IOSProjects/kronon-ios/kronon-ios/NewAccount/NewAccountViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "337">
+               </Location>
+               <Location
+                  uuid = "F75F0923-CC39-487A-8AFC-1F803A36AA81 - fecb6884970f2cb0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "kronon_ios.NewAccountViewController.addAccountButton(Any) -&gt; ()"
+                  moduleName = "kronon-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kokisugi/IOSProjects/kronon-ios/kronon-ios/NewAccount/NewAccountViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "4549">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
