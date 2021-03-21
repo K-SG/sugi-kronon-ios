@@ -74,11 +74,11 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="JFL-fh-7xP" customClass="LoginViewController" customModule="kronon_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gsp-lK-jLi">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="zPe-MB-guU">
-                                <rect key="frame" x="82.333333333333343" y="825.66666666666663" width="263.66666666666663" height="32.333333333333371"/>
+                                <rect key="frame" x="82.333333333333343" y="776.66666666666663" width="263.66666666666663" height="32.333333333333371"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アカウントをお持ちでない場合" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cyh-UN-jYE">
                                         <rect key="frame" x="0.0" y="0.0" width="171.66666666666666" height="32.333333333333336"/>
@@ -106,7 +106,7 @@
                                 </subviews>
                             </stackView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="パスワード" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GwT-aB-Y0z">
-                                <rect key="frame" x="74" y="592" width="280" height="42"/>
+                                <rect key="frame" x="74" y="565" width="280" height="42"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.3966984160958904" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="1NH-S8-Pbu"/>
@@ -124,11 +124,11 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="login_star" translatesAutoresizingMaskIntoConstraints="NO" id="y4v-Sr-joo">
-                                <rect key="frame" x="0.0" y="99" width="428" height="307"/>
+                                <rect key="frame" x="0.0" y="93" width="428" height="289"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="メールアドレス" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jdM-E8-b7I">
-                                <rect key="frame" x="74" y="533" width="280" height="42"/>
+                                <rect key="frame" x="74" y="506" width="280" height="42"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.39669841610000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="Nw6-HH-ozv"/>
@@ -146,13 +146,13 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="〜くろのん〜" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nC-X6-GP2">
-                                <rect key="frame" x="99.333333333333329" y="440.33333333333331" width="229.66666666666669" height="45.666666666666686"/>
+                                <rect key="frame" x="99.333333333333329" y="413.33333333333331" width="229.66666666666669" height="45.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1LP-6i-8Qr">
-                                <rect key="frame" x="74" y="651" width="280" height="42"/>
+                                <rect key="frame" x="74" y="624" width="280" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="4Nd-QX-G7x"/>
@@ -795,7 +795,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="メールアドレス" textAlignment="natural" minimumFontSize="17" background="new_account_text" translatesAutoresizingMaskIntoConstraints="NO" id="nVb-S8-qpS">
-                                <rect key="frame" x="74" y="382.33333333333331" width="280" height="42"/>
+                                <rect key="frame" x="74" y="369" width="280" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="biK-GU-NW2"/>
                                 </constraints>
@@ -808,7 +808,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="パスワード" textAlignment="natural" minimumFontSize="17" background="new_account_text" translatesAutoresizingMaskIntoConstraints="NO" id="Msq-mp-GUr">
-                                <rect key="frame" x="74" y="455.33333333333331" width="280" height="42"/>
+                                <rect key="frame" x="74" y="442" width="280" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="ErM-xw-5JH"/>
                                 </constraints>
@@ -821,7 +821,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="JFz-iZ-spa">
-                                <rect key="frame" x="88.333333333333329" y="825.33333333333337" width="251.33333333333337" height="33"/>
+                                <rect key="frame" x="88.333333333333329" y="776.33333333333337" width="251.33333333333337" height="33"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ログインアカウントがある？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sGV-4a-uOD">
                                         <rect key="frame" x="0.0" y="0.0" width="159.33333333333334" height="33"/>
@@ -842,7 +842,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Y9-id-AzO">
-                                <rect key="frame" x="84" y="195.66666666666666" width="260.33333333333331" height="71.666666666666657"/>
+                                <rect key="frame" x="84" y="182.33333333333334" width="260.33333333333331" height="71.666666666666657"/>
                                 <string key="text">表示名は日本語で15文字以内
 パスワードは半角英数字で8～20文字
 大文字・小文字・数字を必ず使用して
@@ -852,7 +852,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7G-fl-6Qx">
-                                <rect key="frame" x="74" y="601.33333333333337" width="280" height="42"/>
+                                <rect key="frame" x="74" y="588" width="280" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="nCw-G2-62b"/>
                                 </constraints>
@@ -869,7 +869,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="パスワード確認" textAlignment="natural" minimumFontSize="17" background="new_account_text" translatesAutoresizingMaskIntoConstraints="NO" id="rPq-kq-mYg">
-                                <rect key="frame" x="74" y="528.33333333333337" width="280" height="42"/>
+                                <rect key="frame" x="74" y="515" width="280" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="7kx-3l-GUH"/>
                                 </constraints>
@@ -882,12 +882,12 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="表示名" textAlignment="natural" minimumFontSize="17" background="login_text" translatesAutoresizingMaskIntoConstraints="NO" id="zvp-NT-Me9">
-                                <rect key="frame" x="74" y="309.33333333333331" width="280" height="42"/>
+                                <rect key="frame" x="74" y="296" width="280" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="r7a-fj-Ya9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="12"/>
@@ -1178,7 +1178,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="UlU-bl-jRN"/>
+        <segue reference="vCN-2M-8RM"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="account_icon" width="101" height="101"/>

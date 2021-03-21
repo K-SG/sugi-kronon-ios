@@ -160,8 +160,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "69"
             endingLineNumber = "69"
-            landmarkName = "NewAccountViewController"
-            landmarkType = "3">
+            landmarkName = "addAccountButton(_:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "44319201-2B77-4120-9080-3C8309E61F3F - fecb6884970f204a"
@@ -208,8 +208,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "72"
             endingLineNumber = "72"
-            landmarkName = "NewAccountViewController"
-            landmarkType = "3">
+            landmarkName = "addAccountButton(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -224,8 +224,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "71"
             endingLineNumber = "71"
-            landmarkName = "NewAccountViewController"
-            landmarkType = "3">
+            landmarkName = "addAccountButton(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -239,7 +239,9 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "73"
-            endingLineNumber = "73">
+            endingLineNumber = "73"
+            landmarkName = "addAccountButton(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -254,7 +256,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "49"
             endingLineNumber = "49"
-            landmarkName = "viewWillDisappear(_:)"
+            landmarkName = "addAccountButton(_:)"
             landmarkType = "7">
             <Locations>
                <Location
