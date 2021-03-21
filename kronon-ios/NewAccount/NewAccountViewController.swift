@@ -8,6 +8,9 @@
 import UIKit
 
 class NewAccountViewController: UIViewController {
+    
+
+    
     @IBOutlet weak var nameEditText: UITextField!
     @IBOutlet weak var emailEditText: UITextField!
     @IBOutlet weak var passwordEditText: UITextField!
@@ -41,8 +44,72 @@ class NewAccountViewController: UIViewController {
         super.viewWillAppear(animated)
     }
     @IBAction func addAccountButton(_ sender: Any) {
-        let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "calendar") as! KrononTabBarController
-        self.navigationController?.pushViewController(secondViewController, animated: true)
+//        var success:Bool?
+        var message:String?
+        
+        let inputName = nameEditText.text
+        let inputEmail = emailEditText.text
+        let inputPassWord = passwordEditText.text
+        
+        let inputConfirmPassWord = passwordConfirmEditText.text
+        if(inputPassWord != inputConfirmPassWord){
+            conflictPassword()
+        }
+        //APICall
+        let apiURL = "http://54.168.0.159/api/users"
+        guard let url = URL(string: apiURL) else { return }
+        
+        let parameters = ["name":inputName,"email":inputEmail,"password":inputPassWord]
+        guard let httpBody = try? JSONSerialization.data(withJSONObject: parameters, options: []) else { return }
+
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = httpBody
+        
+        URLSession.shared.dataTask(with: request){(data,respose,error) in
+            if let error = error {
+                print("Fail to get item:\(error)")
+                return
+            }
+            if let respose = respose as? HTTPURLResponse {
+                if !(200...299).contains(respose.statusCode){
+                    print("Response status code:\(respose.statusCode)")
+                    DispatchQueue.main.sync {
+                        //レスポンスされたものをdataに格納
+                        if let data = data {
+                            do{
+                                let jsonDict = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+//                                success = (jsonDict?["success"] as! Bool)
+                                message = (jsonDict?["message"] as! String)
+                            } catch {
+                                print("Error parsing the response.")
+                            }
+                        }else{
+                            print("ERROR parsing the response.")
+                        }
+                        //ダイアログで表示
+                        let dialog = UIAlertController(title: "入力エラー", message: message, preferredStyle: .alert)
+                        
+                        dialog.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                        // 生成したダイアログを実際に表示します
+                        self.present(dialog, animated: true, completion: nil)
+                    }
+                    return
+                }else{
+                    print("Response status code:\(respose.statusCode)")
+                    DispatchQueue.main.sync {
+                    let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "calendar") as! KrononTabBarController
+                    self.navigationController?.pushViewController(secondViewController, animated: true)
+                    }
+                    return
+                }
+
+            }
+
+        }.resume()
+        print("アカウント作成ボタンが押されました")
+
     }
     
     //ライフサイクルメソッドの一つ
@@ -58,15 +125,12 @@ class NewAccountViewController: UIViewController {
     private func uiTextFieldRound(){
         
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //ダイアログ
+    private func conflictPassword(){
+            let dialog = UIAlertController(title: "入力エラー", message: "パスワードが異なっているよ", preferredStyle: .alert)
+            dialog.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            // 生成したダイアログを実際に表示します
+            self.present(dialog, animated: true, completion: nil)
     }
-    */
 
 }
