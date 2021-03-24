@@ -10,7 +10,7 @@ import Foundation
 //JSONのitem内のデータ構造
 struct ItemJson:Codable {
     //sucess
-    let success : String?
+    let success : Bool?
     //code
     let message : String?
     //data
@@ -27,7 +27,7 @@ struct LoginUser:Codable {
 }
 //error
 struct LoginError:Codable {
-    let success: String?
+    let success: Bool?
     let code: Int?
     let message: String?
 }

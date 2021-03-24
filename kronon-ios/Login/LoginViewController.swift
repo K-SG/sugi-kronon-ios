@@ -33,7 +33,7 @@ class LoginViewController: UIViewController {
     }
     @IBAction func loginButton(_ sender: Any) {
 //        var success:Bool?
-        var message:String?
+//        var message:String?
         
         let inputEmail = emailText.text
         let inputPassWord = passwordText.text
@@ -51,72 +51,97 @@ class LoginViewController: UIViewController {
         request.httpBody = httpBody
         
         URLSession.shared.dataTask(with: request){(data,respose,error) in
-            if let error = error {
-                print("Fail to get item:\(error)")
-                return
-            }
-            if let respose = respose as? HTTPURLResponse {
-                if !(200...299).contains(respose.statusCode){
-                    print("Response status code:\(respose.statusCode)")
-                    DispatchQueue.main.sync {
-                        //レスポンスされたものをdataに格納
-                        if let data = data {
-                            do{
-                                let jsonDict = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
-                                //                                success = (jsonDict?["success"] as! Bool)
-                                message = (jsonDict?["message"] as! String)
-                            } catch {
-                                print("Error parsing the response.")
-                            }
-                        }else{
-                            print("ERROR parsing the response.")
-                        }
-                        //ダイアログで表示
-                        let dialog = UIAlertController(title: "入力エラー", message: message, preferredStyle: .alert)
-                        
-                        dialog.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                        // 生成したダイアログを実際に表示します
-                        self.present(dialog, animated: true, completion: nil)
-                    }
-                    return
-                }else{
-                    //レスポンスされたものをdataに格納
-                    if let data = data {
-                        do{
-                            let jsonDict = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
-                            
-//                            message = (jsonDict?["message"] as! String)
-                            let couponData = jsonDict.map { (couponData) -> [String: Any] in
-                                return couponData
-                            }
-//                            print(jsonDict!["data"] as Any)
-//                            print(couponData["name"] as! String)
-            
-//                            let responseName = (couponData[0]["name"] as! String)
-//                            let responseEmail = (jsonDict?["data.email"] as! String)
-//                            let responseToken = (jsonDict?["data.token"] as! String)
-//                            print(responseName)
-//                            print(responseEmail)
-//                            print(responseToken)
-                        } catch {
-                            print("Error parsing the response.")
-                        }
-                    }else{
-                        print("ERROR parsing the response.")
-                    }
-                    
-                    print("Response status code:\(respose.statusCode)")
-                    
-//                    let userDefaults = UserDefaults.standard
-//                    userDefaults.set([保存したいデータ], forKey: "[キー名]")
-                    DispatchQueue.main.sync {
-                        let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "calendar") as! KrononTabBarController
-                        self.navigationController?.pushViewController(secondViewController, animated: true)
-                    }
-                    return
+            let decoder: JSONDecoder = JSONDecoder()
+            do {
+                
+                let str: String? = String(data: data!, encoding: .utf8)
+                print(str!)
+                
+                let sample: LoginError = try decoder.decode(LoginError.self, from: data!)
+                print(sample)
+                let encoder = JSONEncoder()
+                do {
+                    let data = try encoder.encode(sample)
+                    let jsonstr:String = String(data: data, encoding: .utf8)!
+                    print(jsonstr)
+                } catch {
+                    print("なんかエラー処理")
+                    print(error)
                 }
                 
+            } catch {
+                print("なんかエラー処理")
+                print(error)
             }
+
+
+//            if let error = error {
+//                print("Fail to get item:\(error)")
+//                return
+//            }
+//            if let respose = respose as? HTTPURLResponse {
+//                if !(200...299).contains(respose.statusCode){
+//                    print("Response status code:\(respose.statusCode)")
+//                    DispatchQueue.main.sync {
+//                        //レスポンスされたものをdataに格納
+//                        if let data = data {
+//                            do{
+//                                let jsonDict = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+//                                //                                success = (jsonDict?["success"] as! Bool)
+//                                message = (jsonDict?["message"] as! String)
+//                                print(data)
+//                            } catch {
+//                                print("Error parsing the response.")
+//                            }
+//                        }else{
+//                            print("ERROR parsing the response.")
+//                        }
+//                        //ダイアログで表示
+//                        let dialog = UIAlertController(title: "入力エラー", message: message, preferredStyle: .alert)
+//
+//                        dialog.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+//                        // 生成したダイアログを実際に表示します
+//                        self.present(dialog, animated: true, completion: nil)
+//                    }
+//                    return
+//                }else{
+//                    //レスポンスされたものをdataに格納
+//                    if let data = data {
+//                        do{
+//                            let jsonDict = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+//
+////                            message = (jsonDict?["message"] as! String)
+////                            let couponData = jsonDict.map { (couponData) -> [String: Any] in
+////                                return couponData
+////                            }
+//                            print(jsonDict!["data"] as Any)
+////                            print(couponData["name"] as! String)
+//
+////                            let responseName = (couponData[0]["name"] as! String)
+////                            let responseEmail = (jsonDict?["data.email"] as! String)
+////                            let responseToken = (jsonDict?["data.token"] as! String)
+////                            print(responseName)
+////                            print(responseEmail)
+////                            print(responseToken)
+//                        } catch {
+//                            print("Error parsing the response.")
+//                        }
+//                    }else{
+//                        print("ERROR parsing the response.")
+//                    }
+//
+//                    print("Response status code:\(respose.statusCode)")
+//
+////                    let userDefaults = UserDefaults.standard
+////                    userDefaults.set([保存したいデータ], forKey: "[キー名]")
+//                    DispatchQueue.main.sync {
+//                        let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "calendar") as! KrononTabBarController
+//                        self.navigationController?.pushViewController(secondViewController, animated: true)
+//                    }
+//                    return
+//                }
+//
+//            }
             
         }.resume()
         print("アカウント作成ボタンが押されました")
