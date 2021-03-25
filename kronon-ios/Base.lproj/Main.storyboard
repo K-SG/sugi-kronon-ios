@@ -457,6 +457,10 @@
                     </view>
                     <tabBarItem key="tabBarItem" tag="2" title="アカウント" image="tabbar_account_icon" id="HBG-er-R0h"/>
                     <navigationItem key="navigationItem" title="アカウント" id="bVI-P0-tIV"/>
+                    <connections>
+                        <outlet property="userEmailText" destination="qvx-F0-LXd" id="kP0-lb-Fat"/>
+                        <outlet property="userNameText" destination="tHi-cC-3GH" id="8OF-q8-Tgc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e0w-1d-CLk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="qHW-7L-YeT" userLabel="Exit" sceneMemberID="exit"/>
@@ -791,7 +795,7 @@
             <objects>
                 <viewController storyboardIdentifier="addAccount" id="7DY-3A-4YS" customClass="NewAccountViewController" customModule="kronon_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xo8-SQ-F7V">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="メールアドレス" textAlignment="natural" minimumFontSize="17" background="new_account_text" translatesAutoresizingMaskIntoConstraints="NO" id="nVb-S8-qpS">

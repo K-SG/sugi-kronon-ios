@@ -8,8 +8,16 @@
 import UIKit
 
 class DetailAccountViewController: UIViewController {
+    @IBOutlet weak var userNameText: UILabel!
+    @IBOutlet weak var userEmailText: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        // UserDefaults のインスタンス
+        let userDefaults = UserDefaults.standard
+        let userName: String = userDefaults.object(forKey: "userName") as! String
+        let userEmail: String = userDefaults.object(forKey: "userEmail") as! String
+        userNameText.text = userName
+        userEmailText.text = userEmail
         
         // Do any additional setup after loading the view.
     }
