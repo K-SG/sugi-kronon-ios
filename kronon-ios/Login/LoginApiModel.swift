@@ -8,25 +8,16 @@
 import Foundation
 
 //JSONのitem内のデータ構造
-struct ItemJson:Codable {
+struct LoginUserResponse:Codable {
     //sucess
     let success : Bool?
     //code
     let message : String?
     //data
-    let data : LoginUser?
-}
-//JSONのデータ構造
-struct LoginUser:Codable {
-    //nama
-    let name : String?
-    //email
-    let email: String?
-    //token
-    let token: String?
+    let data : UserData?
 }
 //error
-struct LoginError:Codable {
+struct LoginErrorResponse:Codable {
     let success: Bool?
     let code: Int?
     let message: String?

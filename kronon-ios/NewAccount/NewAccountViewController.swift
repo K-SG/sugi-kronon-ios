@@ -44,72 +44,58 @@ class NewAccountViewController: UIViewController {
         super.viewWillAppear(animated)
     }
     @IBAction func addAccountButton(_ sender: Any) {
-//        var success:Bool?
-        var message:String?
-        
         let inputName = nameEditText.text
         let inputEmail = emailEditText.text
         let inputPassWord = passwordEditText.text
+        
         
         let inputConfirmPassWord = passwordConfirmEditText.text
         if(inputPassWord != inputConfirmPassWord){
             conflictPassword()
         }
+        // UserDefaults のインスタンス
+        let userDefaults = UserDefaults.standard
         //APICall
-        let apiURL = "http://54.168.0.159/api/users"
+        let apiURL = "http://54.64.229.155/api/users"
         guard let url = URL(string: apiURL) else { return }
         
         let parameters = ["name":inputName,"email":inputEmail,"password":inputPassWord]
         guard let httpBody = try? JSONSerialization.data(withJSONObject: parameters, options: []) else { return }
-
+        
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
         request.httpBody = httpBody
         
         URLSession.shared.dataTask(with: request){(data,respose,error) in
-            if let error = error {
-                print("Fail to get item:\(error)")
-                return
-            }
-            if let respose = respose as? HTTPURLResponse {
-                if !(200...299).contains(respose.statusCode){
-                    print("Response status code:\(respose.statusCode)")
-                    DispatchQueue.main.sync {
-                        //レスポンスされたものをdataに格納
-                        if let data = data {
-                            do{
-                                let jsonDict = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
-//                                success = (jsonDict?["success"] as! Bool)
-                                message = (jsonDict?["message"] as! String)
-                            } catch {
-                                print("Error parsing the response.")
-                            }
-                        }else{
-                            print("ERROR parsing the response.")
+            let decoder: JSONDecoder = JSONDecoder()
+            do {
+                if let respose = respose as? HTTPURLResponse {
+                    if (200...299).contains(respose.statusCode){
+                        print(respose.statusCode)
+                        let responseUser: ResponseUserData = try decoder.decode(ResponseUserData.self, from: data!)
+                        userDefaults.set(responseUser.data.name!, forKey: "userName")
+                        userDefaults.set(responseUser.data.email!, forKey: "userEmail")
+                        userDefaults.set(responseUser.data.token!, forKey: "userToken")
+                        DispatchQueue.main.sync {
+                            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "calendar") as! KrononTabBarController
+                            self.navigationController?.pushViewController(secondViewController, animated: true)
                         }
-                        //ダイアログで表示
-                        let dialog = UIAlertController(title: "入力エラー", message: message, preferredStyle: .alert)
-                        
-                        dialog.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                        // 生成したダイアログを実際に表示します
-                        self.present(dialog, animated: true, completion: nil)
+                    }else{
+                        let sample: ErrorResponse = try decoder.decode(ErrorResponse.self, from: data!)
+                        print("decode:\(sample)")
+                        DispatchQueue.main.sync {
+                            let dialog = UIAlertController(title: "入力エラー", message: sample.message, preferredStyle: .alert)
+                            dialog.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                            // 生成したダイアログを実際に表示します
+                            self.present(dialog, animated: true, completion: nil)
+                        }
                     }
-                    return
-                }else{
-                    print("Response status code:\(respose.statusCode)")
-                    DispatchQueue.main.sync {
-                    let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "calendar") as! KrononTabBarController
-                    self.navigationController?.pushViewController(secondViewController, animated: true)
-                    }
-                    return
                 }
-
+            } catch {
+                print(error)
             }
-
         }.resume()
-        print("アカウント作成ボタンが押されました")
-
     }
     
     //ライフサイクルメソッドの一つ
