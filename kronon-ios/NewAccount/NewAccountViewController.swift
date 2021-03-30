@@ -15,6 +15,7 @@ class NewAccountViewController: UIViewController {
     @IBOutlet weak var emailEditText: UITextField!
     @IBOutlet weak var passwordEditText: UITextField!
     @IBOutlet weak var passwordConfirmEditText: UITextField!
+    let krononClient = KrononClient()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -53,10 +54,15 @@ class NewAccountViewController: UIViewController {
         if(inputPassWord != inputConfirmPassWord){
             conflictPassword()
         }
+        
+        addAccountApi(inputName: inputName!, inputEmail: inputEmail!, inputPassWord: inputPassWord!)
+        
+    }
+    private func addAccountApi(inputName:String,inputEmail:String,inputPassWord:String){
         // UserDefaults のインスタンス
         let userDefaults = UserDefaults.standard
         //APICall
-        let apiURL = "http://54.64.229.155/api/users"
+        let apiURL = "\(krononClient.apiURL)users"
         guard let url = URL(string: apiURL) else { return }
         
         let parameters = ["name":inputName,"email":inputEmail,"password":inputPassWord]

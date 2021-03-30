@@ -33,8 +33,6 @@ class DetailAccountViewController: UIViewController {
     @IBAction func logoutButton(_ sender: Any) {
         print("ログアウトボタンが押されました")
         logoutApi()
-        
-
 //        self.navigationController?.popViewController(animated: true)
     }
     private func logoutApi(){
