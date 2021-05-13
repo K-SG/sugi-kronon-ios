@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class KrononClient:UIAlertController{
-    let apiURL = "http://52.197.190.20/api/"
+    let apiURL = "http://13.231.145.171/api/"
     
     
     func loginApiClient(email:String,password:String) -> Int{

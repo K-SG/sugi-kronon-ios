@@ -9,8 +9,24 @@ import UIKit
 
 class addScheduleViewController: UIViewController , UIPickerViewDelegate, UIPickerViewDataSource {
     
+    @IBOutlet weak var titleText: UITextField!
     @IBOutlet weak var pickerView: UIPickerView!
     @IBOutlet weak var okButton: UIButton!
+    @IBOutlet weak var datePick: UIDatePicker!
+    var dateText :String!
+    @IBAction func dateChange(_ sender: Any) {
+        dateText = self.format(date: datePick.date)
+    }
+
+    func format(date:Date)->String{
+        
+        let dateformatter = DateFormatter()
+        dateformatter.dateFormat = "yyyy/MM/dd"
+        let strDate = dateformatter.string(from: date)
+        
+        return strDate
+    }
+    let krononClient = KrononClient()
     let dataList = [
         "オフィス","外出","在宅"
     ]
@@ -45,20 +61,20 @@ class addScheduleViewController: UIViewController , UIPickerViewDelegate, UIPick
     }
     @IBAction func okButton(_ sender: Any) {
         print("OKbuttons")
-        let inputTitle = "お腹減った"
-        let inputDate = "2021-03-04"
+        let inputTitle = titleText.text
+        let inputDate = "2020-10-11"
         let inputPlace = 1
         let startTime = "10:00"
         let endTime = "14:00"
         let content = "疲れたて"
-        addScheduleApi(inputTitle: inputTitle, inputDate: inputDate, inputPlace: inputPlace, startTime: startTime, endTime: endTime, content: content)
+        addScheduleApi(inputTitle: inputTitle!, inputDate: inputDate, inputPlace: inputPlace, startTime: startTime, endTime: endTime, content: content)
         
     }
     private func addScheduleApi(inputTitle:String,inputDate:String,inputPlace:Int,startTime:String,endTime:String,content:String){
         // UserDefaults のインスタンス
         let userDefaults = UserDefaults.standard
         let token: String = userDefaults.object(forKey: "userToken") as! String
-        let apiURL = "http://54.64.229.155/api/schedules"
+        let apiURL = "\(krononClient.apiURL)schedules"
         guard let url = URL(string: apiURL) else { return }
         let parameters = ["title":inputTitle,"schedule_date":inputDate,"place":inputPlace,"start_time":startTime,"end_time":endTime,"content":content] as [String : Any]
         guard let httpBody = try? JSONSerialization.data(withJSONObject: parameters, options: []) else { return }

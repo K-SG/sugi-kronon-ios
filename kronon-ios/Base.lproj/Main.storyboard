@@ -266,6 +266,9 @@
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="awE-6R-rU0"/>
                                         </constraints>
                                         <locale key="locale" localeIdentifier="ja"/>
+                                        <connections>
+                                            <action selector="dateChange:" destination="3ts-Cj-qIk" eventType="valueChanged" id="vbP-eB-aGq"/>
+                                        </connections>
                                     </datePicker>
                                 </subviews>
                                 <constraints>
@@ -379,8 +382,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="予定登録" id="2X9-8b-ASW"/>
                     <connections>
+                        <outlet property="datePick" destination="wcQ-gd-lo7" id="nma-bK-YII"/>
                         <outlet property="okButton" destination="etg-LH-tMt" id="N0l-G5-mwU"/>
-                        <outlet property="pickerView" destination="Y7k-Mr-rax" id="Tpx-v6-1bj"/>
+                        <outlet property="pickerView" destination="Y7k-Mr-rax" id="Ary-bI-Q6v"/>
+                        <outlet property="titleText" destination="c97-y4-exg" id="0JZ-cH-yYK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PBE-d2-5G6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -685,7 +690,7 @@
             <objects>
                 <viewController storyboardIdentifier="addAccount" id="7DY-3A-4YS" customClass="NewAccountViewController" customModule="kronon_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xo8-SQ-F7V">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="メールアドレス" textAlignment="natural" minimumFontSize="17" background="new_account_text" translatesAutoresizingMaskIntoConstraints="NO" id="nVb-S8-qpS">
